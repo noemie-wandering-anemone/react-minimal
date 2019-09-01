@@ -14,3 +14,5 @@ const view = helloTemplate(data)
 const placeToMount = document.getElementById('root')
 
 ReactDOM.render(view, placeToMount)
+
+
