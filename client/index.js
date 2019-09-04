@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import App from './components/App'
 
-DocumentFragment.addEventListner('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App />,
 
