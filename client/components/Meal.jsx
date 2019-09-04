@@ -36,13 +36,13 @@ class Meal extends React.Component {
     render() {
         return (
             <div className='meal'>
-                <h2>Base Layer: {this.state.taco.baseLayer}</h2>
-                <h2>Condiments: {this.state.taco.condiment}</h2>
-                <h2>Mixin: {this.state.taco.mixin}</h2>
-                <h2>Seasoning: {this.state.taco.seasoning}</h2>
-                <h2>Shell: {this.state.taco.shell}</h2>
-
                 <button onClick={() => this.getTaco()}>Get Taco</button>
+
+                <h4>Base Layer: {this.state.taco.baseLayer}</h4>
+                <h4>Condiments: {this.state.taco.condiment}</h4>
+                <h4>Mixin: {this.state.taco.mixin}</h4>
+                <h4>Seasoning: {this.state.taco.seasoning}</h4>
+                <h4>Shell: {this.state.taco.shell}</h4>
             </div>
         )
     }
