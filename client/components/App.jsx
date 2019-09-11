@@ -2,6 +2,7 @@ import React from 'react'
 import request from 'superagent'
 import Meal from './Meal'
 import Joke from './Jokes'
+import Penguin from './Penguin'
 
 class App extends React.Component {
   
@@ -16,10 +17,8 @@ class App extends React.Component {
                 <p></p>
                 <h2>Dad Jokes</h2>
                 <Joke /> 
-                <h2>Joke</h2>
-                <Joke /> 
-                <h2>Joke</h2>
-                <Joke /> 
+                <h2>Quentin Blake</h2>
+                <Penguin />
             </React.Fragment>
         )
     }

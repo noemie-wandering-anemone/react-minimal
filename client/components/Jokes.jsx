@@ -15,7 +15,7 @@ class Joke extends React.Component {
 
     }
     getJoke() {
-        return request.get('/api/')
+        return request.get('/api/jokes')
             .then(result => {
                 this.setState({
                     joke: result.body.attachments[0].fallback
@@ -25,7 +25,7 @@ class Joke extends React.Component {
     render() {
         return (
             <div className='joke'>
-                {/* <button onClick={() => this.getJoke()}> Tell me a dad joke!</button> */}
+                <button onClick={() => this.getJoke()}> Tell me a dad joke!</button>
                 <p>{this.state.joke}</p>
             </div>
         )
